@@ -9,7 +9,7 @@ public class BinarySearch {
             int middle = (start + end) / 2;
             if (array[middle] == value) return middle;
             if (array[middle] < value) start = middle + 1;
-            if (array[middle] > value) end = middle - 1;
+            else end = middle - 1;
         }
         return -1;
     }
@@ -19,7 +19,7 @@ public class BinarySearch {
             int mid = (start + end) / 2;
             if (array[mid] == value) return mid;
             if (array[mid] < value) return searchTree(array, value, mid + 1, array.length - 1);
-            if (array[mid] > value) return searchTree(array, value, start, mid - 1);
+            else return searchTree(array, value, start, mid - 1);
         }
         return -1;
     }
