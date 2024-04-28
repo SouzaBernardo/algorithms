@@ -19,7 +19,7 @@ class BinarySearchTest {
     public void find(int target, int positionExpected) {
         var array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         var result = binarySearch.search(array, target);
-        var resultRecursive = binarySearch.searchRecursive(array, target, 0, array.length);
+        var resultRecursive = binarySearch.searchTree(array, target, 0, array.length);
         assertEquals(positionExpected, result);
         assertEquals(positionExpected, resultRecursive);
     }
