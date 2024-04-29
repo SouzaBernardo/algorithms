@@ -25,7 +25,7 @@ class BinarySearchTest {
     }
 
     public static Stream<Arguments> scenarios() {
-        return of(arguments(2, 1), arguments(11, -1), arguments(10, 9), arguments(8, 8), arguments(4, 3));
+        return of(arguments(2, 1), arguments(11, -1), arguments(10, 9), arguments(8, 7), arguments(4, 3));
     }
 
 }
